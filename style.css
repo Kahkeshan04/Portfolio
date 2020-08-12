@@ -1,0 +1,660 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url(Img/photo.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    backdrop-filter: blur(100%);  
+}
+
+#container{
+    margin: 0 auto;
+    width: 960px;
+    margin-top: 30px;
+    margin-bottom: 20px;  
+} 
+
+li{
+    list-style: none;
+}
+
+#content{
+    background-color: rgba(0, 0, 0, 0.096);
+    border-radius: 5px;
+    backdrop-filter: blur(10px); 
+    color: white;
+}
+
+/*------------------------start of PROFILE-------------------------------*/
+
+#profile {
+    background-color: rgba(0, 0, 0, 0.096);
+    border-radius: 5px;
+    backdrop-filter: blur(10px);  
+    background-position: center bottom;
+    background-repeat: repeat-x;
+    background-size: contain;
+    overflow: hidden;
+    padding: 20px 40px;
+  }
+
+.about{
+    float: left;
+    margin-top: 30px;
+    width: 490px;
+    margin-left: 20px;
+}
+
+
+.about .photo-inner{
+    float:left;
+    background-image: url(Img/photo-inner.png);
+    width: 200px;
+    height:214px;
+    padding: 12px 0 0 19px;
+}
+
+.about h1{
+    font-weight: 900;
+    color: white;
+    line-height: 40px;
+    margin-top: 8px;
+    margin-left: -20px;
+} 
+
+.about h3{
+    margin-top: 5px;
+    font-size: 18px;
+    color: white;
+    font-family: 'Oswald',sans-serif;
+}
+
+.about p{
+    font-size: 14px;
+    margin-top: 15px;
+    color: white;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: 'Roboto Condensed',sans-serif;
+}
+
+.personal-info{
+    float: left;
+    margin-top: 30px;
+    width: 310px;
+    min-height: 230px;
+    margin-left: 10px;
+    background: url(Img/personal-info-sep.png) no-repeat left top;
+    padding: 20px 0 19px 20px;
+}
+
+.personal-info li{
+    line-height: 12px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    float: left;
+    width: 293px;
+}
+
+.personal-info li label{
+    color: white;
+    float: left;
+    padding: 4px 7px;
+    font-weight: 550;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.personal-info li span{
+    float: right;
+    width: 220px;
+    padding-top: 4px;
+    font-weight: 400;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+}
+
+/*------------------------end of PROFILE-------------------------------*/
+
+
+
+/*------------------------start of TABS-------------------------------*/
+
+.menu{
+    height: 100px;
+    background-color:rgba(250, 250, 250, 0.411);
+    border-radius: 5px;
+    backdrop-filter: blur(10px); 
+    position: relative;
+    padding-left: 230px;
+    padding-right: 130px;
+}
+
+.tabs{
+    display: flex;
+    justify-content: space-around;
+    height: 117px;
+    position: absolute;
+    margin-top: -14px;
+    z-index: 100;
+}
+
+.tabs li > a{
+    padding-top: 28px;
+    width: 115px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.767);
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 580;
+    font-family: 'Robot Condensed',sans-serif;
+    line-height: 35px;
+    margin-right: 35px;
+}
+
+.tabs li > a > i {
+    font-size: 45px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.tab li > a:hover{
+    padding-top: 20px;
+    font-size: 18px;
+    color: white;
+    
+}
+
+.tabs li > a > i:hover{
+    font-size: 52px;
+    color: white;
+    margin-bottom: 1px;
+}
+
+[data-tab-content]{
+    display: none;
+}
+ 
+.active[data-tab-content]{
+    display: block;
+    
+}
+
+.tabs li.active{
+    background-color: rgba(0, 0, 0, 0.548);
+    border-radius: 5px;
+    width: 115px;
+    margin-right: 15px;
+    height: 117px;
+    margin-top: -5px;
+}
+
+.tabs li.active a{
+    color: white;
+}
+
+/*------------------------end of TABS-------------------------------*/
+
+
+
+/*------------------------start of ABOUT-------------------------------*/
+
+.no-padding {
+    padding: 0px;
+}
+
+.no-margin {
+    margin: 0px;
+}
+
+/*----------------------start of ABOUT LEFT SIDE-----------------------------*/
+
+.left-name h2 {
+    text-transform: uppercase;
+    font-size: 54px;
+    font-weight: 700;
+    color: white;
+    font-weight: 800;
+    font-family: 'Oswald', sans-serif !important;
+}
+
+.left-name h2 span {
+    color:rgba(170, 170, 170, 0.5);
+    float: left;
+    width: 100%;
+    margin-top: -11px;
+}
+
+.left-name{
+    margin-top: 10px;
+    border-radius: 5px 5px 0 0;
+}
+
+.left-address {
+   
+    padding: 40px 0px 21px 29px;
+    margin-bottom: 10px;
+    border-radius: 0 0 5px 5px;
+}
+
+.left-name,.left-address {
+    overflow: hidden;
+    padding: 27px;
+    background-color: rgba(0, 0, 0, 0.637);
+    backdrop-filter: blur(5px); 
+    color: white;
+}
+.left-name h5 {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 7px 16px;
+    margin: 10px 0px 20px;
+    border-radius: 50px;
+	color:rgba(0, 0, 0, 0.76);
+	background-color:white;
+}
+
+.left-name p {
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Roboto Condensed', sans-serif; 
+}
+
+.left-address li {
+    padding-left: 10px;
+    color: white;
+    list-style: none;
+    margin-top: -30px;
+    margin-bottom: 32.9px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.left-address span {
+    width: 84px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.ex-heading {
+    background-color: rgba(0, 0, 0, 0.637);
+    backdrop-filter: blur(5px); 
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 5px;
+    padding: 6px 27px;
+    font-size: 25px;
+}
+
+.ex-box h2 {
+    background-color: rgba(0, 0, 0, 0.637);
+    backdrop-filter: blur(5px); 
+    color: #fff;
+    font-size: 17px;
+    line-height: 17px;
+    display: inline-block;
+    padding: 5px 21px;
+    font-weight: 600 !important;
+    border-radius: 50px;
+    letter-spacing: 1px;
+}
+
+.ex-box {
+    padding: 27px 27px 0px 27px;
+}
+
+.ex-box h3 {
+    font-size: 25px;
+    font-weight: 800;
+    padding: 10px 0px 5px;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.ex-box p {
+    font-size: 15px;
+    font-weight: 600;
+    color:black;
+    margin-bottom: 50px;
+}
+
+/*----------------------end of ABOUT LEFT SIDE-----------------------------*/
+
+/*----------------------start of ABOUT RIGHT SIDE-----------------------------*/
+
+.col-md-6.no-padding{
+    padding-bottom: 30px;
+}
+
+.top-skills {
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    width: 473px;
+    max-width: 100%;
+    padding: 40px;
+}
+
+.skills-name ul li {
+    list-style: none;
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.sn {
+    color: #fff;
+    font-size: 23px;
+    font-weight: 700;     
+    width: 80px;
+    height: 80px;
+    border: 5px solid white;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.skills-name {
+    margin-right: 20px;
+}
+
+/*----------------------start of ABOUT SKILLS PROGRESS BAR-----------------------------*/
+
+.right-skills:after {
+    bottom: 0px;
+}
+ 
+.right-skills:before {
+    top: 0px;
+}
+
+.progress {
+    height: 8px;
+    margin-top: 10px;
+    margin-left: -20px;
+}
+
+.right-skills {
+    float: right;
+    padding: 0px 36px;
+}
+
+.heading-skills h3 {
+    color: #fff;
+    font-size: 21px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding-bottom: 14px;
+    margin-left: -28px;
+}
+
+.right-skills h4 {
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 22px;
+    margin-left: -22px;
+    padding: 14px 0 0 0;
+}
+
+/*----------------------end of ABOUT SKILLS PROGRESS BAR-----------------------------*/
+
+/*----------------------start of ABOUT INTEREST-----------------------------*/
+
+
+.interest-icons h1{
+    margin: 40px 0 20px 0;
+}
+
+.interest-box i.fa {
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.interest-icons {
+    color: #fff;
+    text-align: center;    
+    margin-bottom: 19px;
+    margin-left: -10px;
+    justify-content: center;
+}
+
+.interest-icons h5 {
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: white;
+}
+
+/*---------------------------------End of ABOUT INTEREST------------------------------*/
+
+
+
+/*------------------------------------End of ABOUT ------------------------------*/
+
+
+/*---------------------------------start of WORK------------------------------*/
+
+.box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.box .card{
+    position: relative;
+    max-width: 220px;
+    height: 220px;
+    background-color: rgba(0, 0, 0, 0.637);
+    backdrop-filter: blur(5px); 
+    margin: 30px 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease-in-out; 
+}
+
+.box .card:hover{
+    height: 350px;
+}
+
+.box .card .imgcd{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.box .card .imgcd img{
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.box .card .text{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.card .text h2{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 1px;  
+}
+
+.card .text h2 span{
+    font-size: 10px;
+    color: #fff;
+    font-weight: 200;
+    letter-spacing: 5px;  
+    line-height: 50px;
+}
+
+.box .card:hover .text{
+    visibility: visible;
+    opacity: 1;
+    margin-top: 10px;
+}
+
+.box .card .hovertext {
+    position: relative;
+    max-width: 220px;
+    height: 200px;
+    margin-top: -100%;
+    background-color: rgba(0, 0, 0, 0.637);
+    backdrop-filter: opacity(10%); 
+    padding-top: 40%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 100;
+    color: #fff;
+}
+
+.box .card a{text-decoration: none;}
+
+.box .card .hovertext:hover {
+    background-color: transparent;
+    visibility: hidden;
+}
+
+/*---------------------------------End of WORK------------------------------*/
+
+
+
+/*---------------------------------start of CONTACT------------------------------*/
+
+
+.bg{
+    background-color: rgba(0, 0, 0, 0.637)!important;
+    backdrop-filter: blur(5px)!important;
+    border-radius: 10px;
+}
+
+.get-in-touch{
+    max-width: 800px;
+    margin: 50px auto;
+    position: relative;
+    padding: 30px;
+}
+
+.get-in-touch .title{
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 3em;
+    line-height: 48px;
+    padding-bottom: 20px;
+    color:white;
+    background: linear-gradient(to right, white 0%, #e3e2eb 50%, rgba(53, 49, 49, 0.438) 100% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-form .form-field{
+    position: relative;
+    margin: 32px 0;
+}
+
+.contact-form .input-text{
+    display: block;
+    width: 100%;
+    height: 36px;
+    border-width: 0 0 2px 0;
+    border-color: white;
+    background-color: transparent;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: white;
+}
+
+.contact-form .input-text:focus + .label,
+.contact-form .input-text.not-empty + .label{
+    transform: translateY(-24px);
+}
+
+.contact-form .input-text:focus{
+    outline: none;
+}
+
+.contact-form .label{
+    position: absolute;
+    left: 20px;
+    bottom: 11px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    color: white;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: transform 0.2s ease-in-out;  
+}
+
+.contact-form .submit-btn{
+    display:inline-block;
+    background-image: linear-gradient(to right, white 0%, #e3e2eb 50%, rgba(53, 49, 49, 0.438) 100% );
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border: none;
+    width: 200px;
+    cursor: pointer;
+}
+
+/*---------------------------------End of CONTACT------------------------------*/
+
+
+
+/*---------------------------------FOOTER------------------------------*/
+
+
+.copyright{
+    display: flex;
+    width: 100%;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.icons{
+    display: flex;
+    justify-content:space-around;
+}
+
+.copyright .icons li > a > i{
+    text-align: center;
+    padding:0 5px;
+    font-size: 15px;
+    margin: 5px;
+    color: white;
+    text-decoration: none;
+    
+}
