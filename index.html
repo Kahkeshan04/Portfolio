@@ -17,12 +17,24 @@
 <body>
     <div class="bg-image"></div>
     <section id="container">
+        <header>
+
+            <!---------------------------------start of LOGO------------------------------>
+
+            <div id="logo">
+                <h2>Kahkeshan Begum</h2>
+                <h4>Web designer</h4>
+            </div>
+
+            <!---------------------------------End of LOGO-------------------------------->
+
+        </header>
         <section id="content" class="tab-content active">
 
             <!---------------------------------start of PROFILE------------------------------>
 
             <div id="profile" class="active" data-tab-content>
-                <div class="about">
+                <div class="detail">
                     <div class="photo-inner">
                         <ul>
                             <li><img src="Img/photo-1.png" alt="" width="153px" height="186px"></li>
@@ -51,22 +63,22 @@
 
             <nav class="menu">
                 <ul class="tabs">
-                    <li data-tab-target="#profile" class="active">
+                    <li data-tab-target="#profile" class="active" onClick="ani1()">
                         <a href="#profile" class="tab" data-tab-target>
                             <i><i class="fa fa-user"></i></i>
                             PROFILE</a>
                     </li>
-                    <li data-tab-target="#about">
+                    <li data-tab-target="#about" onClick="ani()">
                         <a href="#about" class="tab" data-tab-target>
                             <i><i class="fa fa-wpexplorer"></i></i>
                             ABOUT</a>
                     </li>
-                    <li data-tab-target="#work">
+                    <li data-tab-target="#work" onClick="ani()">
                         <a href="#work" class="tab" data-tab-target>
                             <i><i class="fa fa-eercast"></i></i>
                             WORK</a>
                     </li>
-                    <li data-tab-target="#contact">
+                    <li data-tab-target="#contact" onClick="ani()">
                         <a href="#contact" class="tab" data-tab-target>
                             <i><i class="fa fa-telegram"></i></i>
                             CONTACT</a>
@@ -81,9 +93,9 @@
                 <!---------------------------------start of ABOUT------------------------------>
 
                 <div id="about" data-tab-content>
-                    <div class="container no-padding">
-                        <div class="row no-margin">
-                            <div class="col-md-6 no-padding">
+                    <div class="container no-padding wipe">
+                        <div class="row no-margin ">
+                            <div class="col-md-6 no-padding wipe">
 
                                 <!---------------------------------start of ABOUT LEFT SIDE------------------------------>
 
@@ -116,9 +128,9 @@
 
                             <!---------------------------------start of ABOUT RIGHT SIDE------------------------------>
 
-                            <div class="col-md-6 no-padding">
-                                <div class="top-skills">
-                                    <div class="skills-name">
+                            <div class="col-md-6 no-padding wipe">
+                                <div class="row top-skills ">
+                                    <div class="col-md-3 skills-name">
                                         <div class="sn">C++</div>
                                         <ul>
                                             <li></li>
@@ -128,7 +140,7 @@
                                             <li></li>
                                         </ul>
                                     </div>
-                                    <div class="skills-name">
+                                    <div class="col-md-3 skills-name">
                                         <div class="sn">Html</div>
                                         <ul>
                                             <li></li>
@@ -138,7 +150,7 @@
                                             <li></li>
                                         </ul>
                                     </div>
-                                    <div class="skills-name">
+                                    <div class="col-md-3 skills-name">
                                         <div class="sn">CSS</div>
                                         <ul>
                                             <li></li>
@@ -148,7 +160,7 @@
                                             <li></li>
                                         </ul>
                                     </div>
-                                    <div class="skills-name">
+                                    <div class="col-md-3 skills-name">
                                         <div class="sn">JS</div>
                                         <ul>
                                             <li></li>
@@ -251,46 +263,46 @@
 
                                     <!---------------------------------start of ABOUT INTEREST------------------------------>
 
-                                    <div class="row no-margin ">
-                                        <div class="col-md-12 no-padding interest-icons">
+                                    <div class="row no-margin  ">
+                                        <div class="col-md-12 no-padding interest-icons  fade-in">
                                             <h1>Interests</h1>
                                         </div>
-                                        <div class="col-md-4 interest-icons">
+                                        <div class="col-md-2 interest-icons">
                                             <div class="interest-box">
                                                 <i class="fa fa-plane"></i>
                                                 <br><br>
                                                 <h5>Travel</h5>
                                             </div>
                                         </div>
-                                        <div class="col-md-4 interest-icons">
+                                        <div class="col-md-2 interest-icons">
                                             <div class="interest-box">
                                                 <i class="fa fa-headphones"></i>
                                                 <br><br>
                                                 <h5>Music</h5>
                                             </div>
                                         </div>
-                                        <div class="col-md-4 interest-icons">
+                                        <div class="col-md-2 interest-icons">
                                             <div class="interest-box">
                                                 <i class="fa fa-file-video-o"></i>
                                                 <br><br>
                                                 <h5>Video</h5>
                                             </div>
                                         </div>
-                                        <div class="col-md-4 interest-icons">
+                                        <div class="col-md-2 interest-icons">
                                             <div class="interest-box">
                                                 <i class="fa fa-pencil"></i>
                                                 <br><br>
                                                 <h5>Writing</h5>
                                             </div>
                                         </div>
-                                        <div class="col-md-4 interest-icons">
+                                        <div class="col-md-2 interest-icons">
                                             <div class="interest-box">
                                                 <i class="fa fa-paint-brush"></i>
                                                 <br><br>
                                                 <h5>Arts & Craft</h5>
                                             </div>
                                         </div>
-                                        <div class="col-md-4 interest-icons">
+                                        <div class="col-md-2 interest-icons">
                                             <div class="interest-box">
                                                 <i class="fa fa-cutlery"></i>
                                                 <br><br>
@@ -359,33 +371,33 @@
                     </div>
                 </div>
 
-                <!---------------------------------End of WORK------------------------------>
+                <!---------------------------------End of WORK----------------------------------->
 
                 <!---------------------------------start of CONTACT------------------------------>
 
                 <div id="contact" data-tab-content>
-                    <div class="get-in-touch bg">
-                        <h1 class="title">get-in-touch</h1>
-                        <div class="container">
-                            <div class="contact-form row">
+                    <div class="get-in-touch bg wipe">
+                        <h1 class="title wipe">get-in-touch</h1>
+                        <div class="container wipe">
+                            <div class="contact-form row wipe">
                                 <div class="form-field col-lg-6">
-                                    <input id="name" class="input-text" type="text" name="">
-                                    <label for="name" class="label"> name</label>
+                                    <input id="name" class="input-text wipe" type="text" name="">
+                                    <label for="name" class="label wipe"> name</label>
                                 </div>
                                 <div class="form-field col-lg-6">
-                                    <input id="email" class="input-text" type="email" name="">
-                                    <label for="email" class="label">email</label>
+                                    <input id="email" class="input-text wipe" type="email" name="">
+                                    <label for="email" class="label wipe">email</label>
                                 </div>
                                 <div class="form-field col-lg-6">
-                                    <input id="phone" class="input-text" type="text" name="">
-                                    <label for="phone" class="label">contact number</label>
+                                    <input id="phone" class="input-text wipe" type="text" name="">
+                                    <label for="phone" class="label wipe">contact number</label>
                                 </div>
                                 <div class="form-field col-lg-6">
-                                    <input id="message" class="input-text" type="text" name="">
-                                    <label for="message" class="label">Message</label>
+                                    <input id="message" class="input-text wipe" type="text" name="">
+                                    <label for="message" class="label wipe">Message</label>
                                 </div>
                                 <div class="form-field col-lg-6">
-                                    <input class="submit-btn" type="submit" value="submit" name="">
+                                    <input class="submit-btn wipe" type="submit" value="submit" name="">
                                 </div>
                             </div>
                         </div>
