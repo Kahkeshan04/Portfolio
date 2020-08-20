@@ -15,4 +15,13 @@ tabs.forEach(tab => {
   })
 })
 
+function ani(){
+  document.getElementById('logo').style.display='contents';
+}
+
+function ani1(){
+  document.getElementById('logo').style.display='none';
+}
+
+
 
